@@ -21,10 +21,10 @@ img {
     font-family: 'ReformaGroteskDemi';
     src: url('ReformaGroteskDemi.eot');
     src: local('ReformaGroteskDemiC Regular'), local('ReformaGroteskDemi'),
-        url('ReformaGroteskDemi.eot?#iefix') format('embedded-opentype'),
-        url('ReformaGroteskDemi.woff2') format('woff2'),
-        url('ReformaGroteskDemi.woff') format('woff'),
-        url('ReformaGroteskDemi.ttf') format('truetype');
+        url('/Fonts/ReformaGroteskDemi.eot?#iefix') format('embedded-opentype'),
+        url('/Fonts/ReformaGroteskDemi.woff2') format('woff2'),
+        url('/Fonts/ReformaGroteskDemi.woff') format('woff'),
+        url('/Fonts/ReformaGroteskDemi.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -34,10 +34,10 @@ img {
     font-family: 'ReformaGroteskDemi';
     src: url('ReformaGroteskDemi.eot');
     src: local('Reforma Grotesk Demi'), local('ReformaGroteskDemi'),
-        url('ReformaGroteskDemi.eot?#iefix') format('embedded-opentype'),
-        url('ReformaGroteskDemi.woff2') format('woff2'),
-        url('ReformaGroteskDemi.woff') format('woff'),
-        url('ReformaGroteskDemi.ttf') format('truetype');
+        url('/Fonts/ReformaGroteskDemi.eot?#iefix') format('embedded-opentype'),
+        url('/Fonts/ReformaGroteskDemi.woff2') format('woff2'),
+        url('/Fonts/ReformaGroteskDemi.woff') format('woff'),
+        url('/Fonts/ReformaGroteskDemi.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -47,10 +47,10 @@ img {
     font-family: 'ReformaGroteskDemi';
     src: url('ReformaGroteskDemi.eot');
     src: local('Reforma Grotesk Demi'), local('ReformaGroteskDemi'),
-        url('ReformaGroteskDemi.eot?#iefix') format('embedded-opentype'),
-        url('ReformaGroteskDemi.woff2') format('woff2'),
-        url('ReformaGroteskDemi.woff') format('woff'),
-        url('ReformaGroteskDemi.ttf') format('truetype');
+        url('/Fonts/ReformaGroteskDemi.eot?#iefix') format('embedded-opentype'),
+        url('/Fonts/ReformaGroteskDemi.woff2') format('woff2'),
+        url('/Fonts/ReformaGroteskDemi.woff') format('woff'),
+        url('/Fonts/ReformaGroteskDemi.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -58,10 +58,9 @@ img {
 
 body {
     min-width: 1200px;
-
     font-family: 'ReformaGroteskDemi', sans-serif;
     font-weight: 400;
-    background-color: #1E1E1E;
+    background-color: black;
     ;
 }
 
@@ -70,9 +69,9 @@ body {
 .container {
     width: 1920px;
     margin: 0 auto;
-    padding: 35px 0 35px 0;
-    max-width: 100%;
-    background-color: #1E1E1E;
+    padding: 0;
+    background-color: black;
+
 }
 
 .list-reset {
@@ -112,36 +111,141 @@ body {
 }
 
 /* *** *** HEADER *** *** */
-
-.header{
-    width: 1920px;
-    height: 1080px;
-
+.header {
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .slideshow {
     width: 1920px;
-    height: 1080px; 
-    border: 1px solid #999;
-    background: url(../img/header/bckg-01.jpg) no-repeat,
-      url(../img/header/bckg-02.jpg) no-repeat,
-      url(../img/header/bckg-03.jpg) no-repeat,
-      url(../img/header/bckg-04.jpg) no-repeat;
-      
+    height: 1080px;
+    background: url(../img/header/bckg-01.jpg);
+    background-repeat: no-repeat;
+}
 
-    animation: slide-right 15s forwards 1s;
-  }
-  @keyframes slide-right{
-    0% {
-      background-position: 0 0, 600px 0, 1200px 0, 1800px 0
-    }
-    16%, 33% {
-      background-position: -600px 0, 600px 0, 1200px 0, 1800px 0
-    }
-    49%, 66% {
-      background-position: -1200px 0, 600px 0, 1200px 0, 1800px 0
-    }
-    85%, 100% {
-      background-position: -1800px 0, 600px 0, 1200px 0, 1800px 0
-    }
-  }
+.header-top {
+    margin: 40px 312px;
+    justify-content: space-between;
+}
+
+.nav-list-item {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.nav-list-item:not(:first-child) {
+    margin-left: 40px;
+}
+
+.header-mid {
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-music-title {
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 125%;
+    text-align: center;
+    color: #DB3138;
+    margin-bottom: 100px;
+}
+
+.mid-list {
+    align-items: center;
+}
+
+.mid-rectangle {
+    justify-content: center;
+}
+
+.header-mid-rectangle {
+    padding-left: 20px;
+    margin-bottom: 70px;
+    margin-top: 50px;
+
+}
+
+.mid-descr {
+
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 120%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+
+
+}
+
+.mid-services {
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+    
+}
+
+.header-bott {
+    justify-content: space-around;
+}
+
+.bott-list {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bott-list-item {
+    margin: 0;
+    width: 33.33%;
+    flex-direction: column;
+    padding: 43px 180px;
+}
+
+.bott-list-item {
+    border-bottom: 1px solid #898989;
+    border-top: 1px solid #898989;
+}
+
+.bott-list-item:not(:last-child) {
+    border-right: 1px solid #898989;
+
+}
+
+
+.bott-list-item-title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.bott-list-item-content {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #DB3138;
+}
+
+.bott-item-descr:not(:last-child) {
+    margin-bottom: 15px;
+}
