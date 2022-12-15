@@ -106,8 +106,13 @@ body {
 }
 
 .section-offset {
-    padding-top: 87px;
-    padding-bottom: 160px;
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+
+.section-sides{
+    padding-right: 312px;
+    padding-left: 312px;
 }
 
 /* *** *** HEADER *** *** */
