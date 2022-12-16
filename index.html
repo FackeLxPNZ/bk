@@ -1,108 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NoDriftNoFun</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
-</head>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+  </head>
 
-<body>
-    <div class="container ">
-        <header class="header  slideshow flex">
-            <div class="header-top flex">
-                <nav class="header-top-nav">
-                    <ul class="nav-list list-reset flex">
-                        <li class="nav-list-item"><a href="#"> Главная</a></li>
-                        <li class="nav-list-item"><a href="#"> Оклейка автомобилей</a></li>
-                        <li class="nav-list-item"><a href="#"> Детейлинг автомобилей</a></li>
-                        <li class="nav-list-item"><a href="#"> Галерея работ</a></li>
-                    </ul>
-                </nav>
-                <div class="header-top-menu">
-                    <img src="/img/header/nav-menu.png" alt="" class="menu-img">
-                </div>
+  <body>
+    <div class="container">
+      <header class="header slideshow flex">
+        <div class="header-top flex">
+          <nav class="header-top-nav">
+            <ul class="nav-list list-reset flex">
+              <li class="nav-list-item"><a href="#"> Главная</a></li>
+              <li class="nav-list-item">
+                <a href="#"> Оклейка автомобилей</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#"> Детейлинг автомобилей</a>
+              </li>
+              <li class="nav-list-item"><a href="#"> Галерея работ</a></li>
+            </ul>
+          </nav>
+          <div class="header-top-menu">
+            <img src="/img/header/nav-menu.png" alt="" class="menu-img" />
+          </div>
+        </div>
+        <div class="header-mid flex">
+          <ul class="mid-list list-reset">
+            <li class="mid-list-item">
+              <article class="car-music-title">DRIFT CARS</article>
+            </li>
+
+            <li class="mid-list-item">
+              <article class="mid-rectangle flex">
+                <img
+                  class="header-mid-rectangle"
+                  src="/img/header/Rectangle 32.svg"
+                  alt="rectangle"
+                />
+                <img
+                  class="header-mid-rectangle"
+                  src="/img/header/Rectangle 32.svg"
+                  alt="rectangle"
+                />
+                <img
+                  class="header-mid-rectangle"
+                  src="/img/header/Rectangle 32.svg"
+                  alt="rectangle"
+                />
+                <img
+                  class="header-mid-rectangle"
+                  src="/img/header/Rectangle 32.svg"
+                  alt="rectangle"
+                />
+              </article>
+            </li>
+            <li class="mid-list-item">
+              <article class="mid-descr">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
+                  orci urna amet penatibus.
+                </p>
+              </article>
+            </li>
+
+            <li class="mid-list-item">
+              <article class="mid-services">
+                <p><a href=""> Наши услуги</a></p>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div class="header-bott flex">
+          <ul class="bott-list list-reset flex">
+            <li class="bott-list-item flex">
+              <article class="bott-list-item-title">Адрес:</article>
+              <article class="bott-list-item-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </article>
+            </li>
+            <li class="bott-list-item flex">
+              <article class="bott-list-item-title">Телефон:</article>
+              <article class="bott-list-item-content">
+                <article class="bott-item-descr">
+                  <a href="89111234567">8-911-123-45-67</a>
+                </article>
+                <article class="bott-item-descr">
+                  <a href="88121234567">8 (812) 123-45-67</a>
+                </article>
+              </article>
+            </li>
+            <li class="bott-list-item flex">
+              <article class="bott-list-item-title">Режим работы:</article>
+              <article class="bott-list-item-content">
+                <article class="bott-item-descr">пн-пт : 10:00 - 20:00</article>
+                <article class="bott-item-descr">
+                  сб-вск : 12:00 - 20:00
+                </article>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main">
+        <section class="achievements"></section>
+        <section class="slider section-offset">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/slider/slide1.jpg" alt="slider1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider/slide2.jpg" alt="slider2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider/slide3.jpg" alt="slider3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="" alt="slider4" />
+              </div>
+              <div class="swiper-slide">
+                <img src="" alt="slider5" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider/slide3.jpg" alt="slider6" />
+              </div>
             </div>
-            <div class="header-mid flex">
-                <ul class="mid-list list-reset">
-                    <li class="mid-list-item ">
-                        <article class="car-music-title">DRIFT CARS</article>
-                    </li>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+          <script src="Js/document.js"></script>
+        </section>
+        <section class="advantages"></section>
+        <section class="services"></section>
+        <section class="advantages"></section>
+      </main>
 
-                    <li class="mid-list-item">
-                        <article class="mid-rectangle flex">
-                            <img class="header-mid-rectangle" src="/img/header/Rectangle 32.svg" alt="rectangle">
-                            <img class="header-mid-rectangle" src="/img/header/Rectangle 32.svg" alt="rectangle">
-                            <img class="header-mid-rectangle" src="/img/header/Rectangle 32.svg" alt="rectangle">
-                            <img class="header-mid-rectangle" src="/img/header/Rectangle 32.svg" alt="rectangle">
-                        </article>
-
-                    </li>
-                    <li class="mid-list-item">
-                        <article class="mid-descr">
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae orci urna amet penatibus.
-                            </p>
-                        </article>
-                    </li>
-
-                    <li class="mid-list-item ">
-                        <article class="mid-services">
-                            <p><a href=""> Наши услуги</a></p>
-                        </article>
-                    </li>
-                </ul>
-
-
-
-
-            </div>
-            <div class="header-bott flex">
-                <ul class="bott-list list-reset flex">
-                    <li class="bott-list-item flex">
-                        <article class="bott-list-item-title">Адрес:</article>
-                        <article class="bott-list-item-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                        </article>
-                    </li>
-                    <li class="bott-list-item flex">
-                        <article class="bott-list-item-title">Телефон:</article>
-                        <article class="bott-list-item-content">
-                            <article class="bott-item-descr"><a href="89111234567">8-911-123-45-67</a></article>
-                            <article class="bott-item-descr"><a href="88121234567">8 (812) 123-45-67</a></article>
-                        </article>
-                    </li>
-                    <li class="bott-list-item flex">
-                        <article class="bott-list-item-title">Режим работы:</article>
-                        <article class="bott-list-item-content">
-                            <article class="bott-item-descr"> пн-пт : 10:00 - 20:00</article>
-                            <article class="bott-item-descr"> сб-вск : 12:00 - 20:00</article>
-                        </article>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <main class="main">
-
-            <section class="achievements"></section>
-            <section class="slider"></section>
-            <section class="advantages"></section>
-            <section class="services"></section>
-            <section class="advantages"></section>
-
-
-        </main>
-
-
-        
-        <our-works class="our-works">
-        </our-works>
-        <footer class="footer">
-        </footer>
-
+      <our-works class="our-works"> </our-works>
+      <footer class="footer"></footer>
     </div>
-</body>
-
+  </body>
 </html>
